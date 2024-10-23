@@ -1,0 +1,98 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #1976d2;
+    --header-background-color: #ffffff;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #e0e0e0;
+
+    /* SVG Colors */
+    --svg-fill-color: #000000;
+    --svg-stroke-color: #000000;
+
+    /* Input and Label Colors */
+    --input-border-color: #e0e0e0;
+    --input-label-color: #000000;
+    --input-placeholder-color: rgba(0, 0, 0, 0.5);
+
+    /* Additional Colors */
+    --link-color: #1976d2;
+    --hover-color: rgba(25, 118, 210, 0.1);
+
+    /* Datatable Colors */
+    --datatable-header-color: #1c172b20;
+    --datatable-row-color: #251E4020;
+}
+
+[data-theme="dark"] {
+    /* Primary Colors */
+    --primary-color: #115293;
+    --header-background-color: #17151f;
+    --background-color: #17151f;
+    --text-color: #ffffff;
+    --border-color: #ffffff;
+
+    /* SVG Colors */
+    --svg-fill-color: #ffffff;
+    --svg-stroke-color: #ffffff;
+
+    /* Input and Label Colors */
+    --input-border-color: #ffffff;
+    --input-label-color: #ffffff;
+    --input-placeholder-color: rgba(255, 255, 255, 0.5);
+
+    /* Additional Colors */
+    --link-color: #ffffff;
+    --hover-color: rgba(255, 255, 255, 0.1);
+
+     /* Datatable Colors */
+     --datatable-header-color: #1c172b;
+     --datatable-row-color: #251E40;
+    }
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    background-color: var(--header-background-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: var(--hover-color);
+}
+
+input {
+    border: 1px solid var(--input-border-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+input::placeholder {
+    color: var(--input-placeholder-color);
+}
+
+label {
+    color: var(--input-label-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.svg-icon {
+    fill: var(--svg-fill-color);
+    stroke: var(--svg-stroke-color);
+}
+
+.sticky-box.blurred {
+    backdrop-filter: blur(10px);
+}
